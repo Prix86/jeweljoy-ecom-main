@@ -154,10 +154,7 @@ p {
   display: none;
   flex-direction: column;
   background-color: #fff;
-  position: fixed;
-  width: 200px; /* Ancho del menú */
-  height: 100vh; /* Alto completo de la pantalla */
-  transform: translateX(-100%);
+  position: absolute;
   top: 70px;
   left: 0;
   width: 100%;
@@ -183,11 +180,3 @@ p {
 .menu ul li a:hover {
   background-color: #f8e8e8;
 }
-
-.menu.active {
-  transform: translateX(0);
-}
-
-
-
-
