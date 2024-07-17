@@ -130,3 +130,7 @@ def checkout(request):
         return render(request, 'store/checkout.html', {'cart': cart})
     else:
         return redirect('cart')
+
+
+def who(request):
+    return render(request, 'store/who.html')
