@@ -1,0 +1,287 @@
+
+/* Estilos para el carrito de compras */
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cart-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.cart-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.cart-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cart-item h3 {
+    margin: 10px 0;
+}
+
+.cart-item p {
+    color: #666;
+}
+
+.cart-item button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el resumen del carrito */
+.cart-summary {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.cart-summary h2 {
+    margin-bottom: 10px;
+}
+
+.cart-summary table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-summary th, .cart-summary td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.cart-summary th {
+    background-color: #f0f0f0;
+}
+
+.cart-summary td {
+    text-align: right;
+}
+
+.cart-summary .total {
+    font-weight: bold;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .cart-items {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
+
+
+/* Estilos para el menú desplegable */
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  .menu ul li a:hover {
+    background-color: #f8e8e8;
+  }
+  
+
+
+  
+/*   DISCRIMINAR            */
+
+  body {
+    background-color: #f8e8e8; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8e8e8; 
+    border-bottom: 1px solid #ccc;
+    position: relative;
+  }
+  
+  .nav-left, .nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-left {
+    justify-content: flex-start;
+  }
+  
+  .nav-right {
+    justify-content: flex-end;
+  }
+  
+  .logo {
+    max-width: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .menu-icon, .profile-icon, .cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 20px;
+    color: #6d6b6b;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    background-color: #f8e8e8;
+    padding: 20px;
+    margin:100px;
+  }
+  
+  .image img {
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .image {
+    overflow: hidden;
+  }
+  
+  .image img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    margin-left:250px;
+  }
+  
+  .image img:hover {
+    transform: scale(1.1);
+  }
+  
+  .content {
+    margin-left: 90px;
+    text-align: left;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #f8e8e8;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #6d6b6b;
+  }
+  
+  
+  
+  .container2 {
+    display: flex;
+    align-items: center;
+    background-color: #f8e8e8;
+    padding: 20px;
+    margin:100px;
+  }
+  
+  .image2 img {
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .image2 {
+    overflow: hidden;
+  }
+  
+  .image2 img {
+    width: 800px;
+    height: 700px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    margin-left:800px;
+    margin: 100px;
+  }
+  
+  .image2 img:hover {
+    transform: scale(1.1);
+  }
+  
+  .content2 {
+    margin-left: 100px;
+    text-align: left;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }

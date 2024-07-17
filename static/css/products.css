@@ -1,0 +1,150 @@
+body {
+    background-color: #f8e8e8;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8e8e8;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.nav-left, .nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    justify-content: flex-start;
+}
+
+.nav-right {
+    justify-content: flex-end;
+}
+
+.logo {
+    max-width: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-icon, .profile-icon, .cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.profile-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+}
+
+.product-card:hover .produc-image {
+ /*   transform: translateY(-10px); */
+    transform: scale(1.2);
+}
+
+.product-image {
+    max-width: 30%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+.product-card button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #555;
+}
+
+/* Estilos para el menú desplegable */
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #f8e8e8;
+}
+
+
+.product-price {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0; /* Espacio alrededor del precio */
+}

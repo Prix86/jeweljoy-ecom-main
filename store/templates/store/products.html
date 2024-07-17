@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JewelJoy Box - Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/products.css' %}">
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
+        </div>
+        <img src="{% static 'imagenes/logo.png' %}" alt="JewelJoy Box" class="logo">
+        <div class="nav-right">
+            <a href="{% url 'register' %}" class="profile-link"><i class="fas fa-user profile-icon"></i></a>
+            <i class="fas fa-shopping-cart cart-icon"></i>
+        </div>
+    </header>
+    <!--Menu interactivo -->
+    <nav id="menu" class="menu">
+        <ul>
+            <li><a href="{% url 'home' %}">Inicio</a></li>
+            <li><a href="{% url 'productos' %}">Productos</a></li>
+            <li><a href="{% url 'register' %}">Registro</a></li>
+            <li><a href="{% url 'productos' %}">Productos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="product-menu">
+            <div class="product-card">
+                <img src="{% static 'imagenes/misterybox.webp' %}" alt="Producto 1" class="product-image">
+                <h3>Caja Misteriosa</h3>
+                <p>Encuentra 3 productos aleatorios de esta colección.</p>
+                <p class="product-price">$490</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/cadena2.jpg' %}" alt="Producto 2" class="product-image">
+                <h3>Collar de Oro </h3>
+                <p>Un elegante collar.</p>
+                <p class="product-price">$190</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/cadena3.jpg' %}" alt="Producto 4" class="product-image">
+                <h3>Anillo de esmeralda </h3>
+                <p>Una lujosa pulsera de diamantes.</p>
+                <p class="product-price">$210</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/anillo esmeralda.webp' %}" alt="Producto 3" class="product-image">
+                <h3>Pulsera de Diamantes</h3>
+                <p>Una lujosa pulsera de diamantes.</p>
+                <p class="product-price">$170</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/anillo3.webp' %}" alt="Producto 3" class="product-image">
+                <h3>Pulsera de Diamantes</h3>
+                <p>Una lujosa pulsera de diamantes.</p>
+                <p class="product-price">$205</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/anillo4.webp' %}" alt="Producto 3" class="product-image">
+                <h3>Pulsera de Diamantes</h3>
+                <p>Una lujosa pulsera de diamantes.</p>
+                <p class="product-price">$190</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/anillo5.webp' %}" alt="Producto 3" class="product-image">
+                <h3>Pulsera de Diamantes</h3>
+                <p>Una lujosa pulsera de diamantes.</p>
+                <p class="product-price">$185</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/anillo6.webp' %}" alt="Producto 3" class="product-image">
+                <h3>Pulsera de Diamantes</h3>
+                <p>Una lujosa pulsera de diamantes.</p>
+                <p class="product-price">$200</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/aretes1.webp' %}" alt="Producto 3" class="product-image">
+                <h3>Pulsera de Diamantes</h3>
+                <p>Una lujosa pulsera de diamantes.</p>
+                <p class="product-price">$150</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/aretes2.webp' %}" alt="Producto 3" class="product-image">
+                <h3>Pulsera de Diamantes</h3>
+                <p>Una lujosa pulsera de diamantes.</p>
+                <p class="product-price">$140</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/aretes3.webp' %}" alt="Producto 3" class="product-image">
+                <h3>Pulsera de Diamantes</h3>
+                <p>Una lujosa pulsera de diamantes.</p>
+                <p class="product-price">$120</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/pulsera1.webp' %}" alt="Producto 3" class="product-image">
+                <h3>Pulsera de Diamantes</h3>
+                <p>Una lujosa pulsera de diamantes.</p>
+                <p class="product-price">$300</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/pulsera2.webp' %}" alt="Producto 3" class="product-image">
+                <h3>Pulsera de Diamantes</h3>
+                <p>Una lujosa pulsera de diamantes.</p>
+                <p class="product-price">$190</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/pulsera3.webp' %}" alt="Producto 3" class="product-image">
+                <h3>Pulsera de Diamantes</h3>
+                <p>Una lujosa pulsera de diamantes.</p>
+                <p class="product-price">$189</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/cadena15.png' %}" alt="Producto 3" class="product-image">
+                <h3>Pulsera de Diamantes</h3>
+                <p>Una lujosa pulsera de diamantes.</p>
+                <p class="product-price">$130</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static 'imagenes/cadena16.jpg' %}" alt="Producto 3" class="product-image">
+                <h3>Pulsera de Diamantes</h3>
+                <p>Una lujosa pulsera de diamantes.</p>
+                <p class="product-price">$100</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </main>
+    <script src="{% static 'js/products.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/socket.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+{% load static %}
+<!--
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyería</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<body>
+    <header>
+        <h1>Joyería</h1>
+        <nav>
+            <ul>
+          <!-       <li><a href="index.html">Inicio</a></li>
+                 <li><a href="producto.html">Producto</a></li>
+                <li><a href="{% url 'home' %}">Inicio</a></li>               <!--PRIX->
+                <li><a href="{% url 'products' %}">Productos</a></li>        <!--PRIX->
+                {% if user.is_authenticated %}                               <!--PRIX->                     
+                <li><a href="{% url 'logout' %}">Cerrar Sesión</a></li>      <!--PRIX->
+            {% else %}                                                       <!--PRIX->                     
+                <li><a href="{% url 'login' %}">Iniciar Sesión</a></li> 
+                <li><a href="{% url 'register' %}">Registrarse</a></li>     <!--PRIX->
+            {% endif %}                                                      <!--PRIX->                        
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!- Contenido Principal ->
+        <section id="inicio">
+            <h2>Bienvenidos a nuestra tienda de joyería</h2>
+            <p>Aquí encontrarás las mejores joyas.</p>
+        </section>
+
+        <section id="producto">
+            <h2>Detalles del Producto</h2>
+            <p>Descripción del producto aquí.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Joyería</p>
+    </footer>
+</body>
+</html>
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JewelJoy Box</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
+        </div>
+        <img src="{% static 'imagenes/logo.png' %}" alt="JewelJoy Box" class="logo">
+        
+        <div class="nav-right">
+            <a href="{% url 'register' %}" class="profile-link"><i class="fas fa-user profile-icon"></i></a>
+        </div>
+    </header>
+    <!--Menu interactivo -->
+    <nav id="menu" class="menu">
+        <ul>
+            <li><a href="{% url 'home' %}">Inicio</a></li>
+            <li><a href="{% url 'productos' %}">Productos</a></li>
+            <li><a href="{% url 'register' %}">Registro</a></li>
+            <li><a href="{% url 'productos' %}">Productos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="image">
+                <img src="{% static 'imagenes/modelo.jpg' %}" alt="JeweljoyBOX">
+            </div>
+            <div class="content">
+                <h1>JeweljoyBOX</h1>
+                <p>Joyas y Accesorios</p>
+                <a href="{% url 'productos' %}" class="btn-comprar">Compra ya</a>
+            </div>
+        </div>
+        
+        <div class="container2">
+            <div class="content2">
+                <h1>Hecho para ti</h1>
+                <p>Deja que tu personalidad brille <br>con piezas hechas a mano<br> confeccionadas solo para ti.</p>
+                <div class="image2">
+                    <img src="{% static 'imagenes/pulsera.jpg' %}" alt="JeweljoyBOX">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="{% static 'js/products.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/socket.js' %}"></script>
+</body>
+</html>
+
